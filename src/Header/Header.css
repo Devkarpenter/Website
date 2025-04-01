@@ -1,0 +1,149 @@
+/* Reset some default styles */
+/* @import url("../stlye/header.mediaquery.css"); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Mulish", sans-serif;
+  }
+
+  .border {
+    border: 1px solid #170505;
+  }
+  
+  .header {
+    background: #f9f9f9;
+  }
+
+  .header .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .header .container .row{
+    width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    /* justify-content: space-between; */
+  }
+
+  .header .container .row .col-1{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header .container .row .col-2{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header .container .row .col-2 .header-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  .header .container .row .col-2 .header-menu-num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+  }
+
+  .header .header-social {
+    padding: 38px 0 33px;
+  }
+
+  .header .header-social a{
+      font-size: 20px;
+      color: #142336;
+      display: inline-block;
+      margin-right: 18px;
+
+  }
+
+  .header .col-2 .header-options{
+    position: relative;
+    text-align: right;
+  }
+
+  .header-menu ul li a{
+    text-decoration: none;
+    font-size: 18px;
+      color: #142336;
+      font-family: "Saira Condensed", sans-serif;
+      font-weight: 600;
+      display: block;
+      padding: 41px 0 33px;
+      text-transform: uppercase;
+  }
+
+  .header-menu ul li:nth-child(3){
+    margin-right: 175px;
+  }
+
+  .header-options .header-menu-num{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Mulish", sans-serif;
+    color: #4586D5;
+    padding: 9px 30px 7px;
+    border: 2px solid #FAD110;
+    margin: 22px 0 23px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25px;
+  left: 300px;
+  /* width: 180px;
+  height: 100px;
+  background: #142336;
+  text-align: center;
+  padding: 30px 25px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -234px; */
+}
+
+
+
+  /* .header-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .container .col-2 .header-options{
+    display: flex;
+  }
+
+  .container .col-2 .header-options ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 15px;
+  }
+
+
+
+

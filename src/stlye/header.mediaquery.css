@@ -1,0 +1,55 @@
+/* media query for 1200 pixal */
+@media screen and (width>1200px) {
+    
+}
+
+
+/* media query for 1200 pixal */
+@media only screen and (width<1200px) {
+    .header-options .header-menu-num{
+        display: none!important;
+        
+    }
+}
+
+/* media query for 991 pixal */
+@media only screen and (width<991px) {
+
+    .header-menu , .header-social{
+        display: none !important;
+    }
+
+
+    .header .container .row .col-1{
+        display: none!important;
+    }
+}
+
+
+/* media query for 768 pixal */
+@media only screen and (width < 768px) {
+/* .header .head-options{
+    display: none !important;;
+}
+.header .head-icons{
+    display: none;
+} */
+}
+
+/* media query for 768 pixal */
+@media only screen and (width > 768px) {
+   .header .row button{
+    display: none;
+   }
+    
+}
+
+/* media query for 576 pixal */
+@media only screen and (max-width < 576px) {
+
+}
+
+/* media query for 576 pixal */
+@media only screen and (width < 500px) {
+
+}

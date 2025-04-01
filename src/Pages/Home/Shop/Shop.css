@@ -1,0 +1,155 @@
+/* Breadcrumb Section - Background image and styling */
+#Shop-page .bread-crump-options {
+    background-image: url("../../../assets/breadcrumb-3.jpg.webp");
+    background-size: cover;
+    width: 100%;
+}
+
+/* Breadcrumb title styling */
+#Shop-page .bread-crump-options h2 {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 35px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+/* Container row alignment */
+#Shop-page .container .row {
+    align-items: flex-start;
+    padding-top: 60px;
+}
+
+/* Main content column */
+/* #Shop-page .container .col-1 {
+    width: 75%;
+} */
+
+/* Sidebar column styling */
+#Shop-page .container .row .col-2 {
+    padding-left: 30px;
+    /* width: 25%; */ 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#Shop-page .container .col-1 .row-2 .items{
+    text-align: center;
+}
+
+#Shop-page .container .col-1 .row-2 .items .item-text {
+    padding: 25px 25px 0;
+}
+
+/* Sidebar button styling */
+#Shop-page .container .row .col-2 button {
+    font-size: 25px;
+    border: 1px solid #e1e1e1;
+    border-left: none;
+    background: #ffffff;
+    position: absolute;
+    height: 50px;
+    margin-left: -3px;
+    padding: 0 20px;
+}
+
+/* Remove outline on focus */
+#Shop-page .container .row .col-2 form input:focus {
+    outline: none;
+}
+
+/* Sidebar product price section */
+#Shop-page .container .row .col-2 .product-sidebar-price {
+    height: 130px;
+}
+
+/* Sidebar links styling */
+#Shop-page .container .row .col-2 a {
+    text-decoration: none;
+}
+
+/* Sidebar item layout */
+#Shop-page .container .row .col-2 .product-sidebar-item {
+    display: flex;
+}
+
+/* Sidebar search input field */
+#Shop-page .container .col-2 .product-sidebar-search input {
+    height: 50px;
+    border: 1px solid #e1e1e1;
+    font-size: 15px;
+    color: #888888;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Sidebar title styling */
+#Shop-page .container .col-2 .pside-title h4 {
+    color: #142336;
+    font-weight: 600;
+    display: inline-block;
+    padding-right: 12px;
+    background: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* Product items row styling */
+#Shop-page .container .row-2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Product item text link styling */
+#Shop-page .container .row-2 .product-item .item-text a {
+    color: #142336;
+    text-decoration: none;
+    line-height: 26px;
+    text-align: center;
+}
+
+/* Product price styling */
+#Shop-page .container .row-2 .product-item .item-text .price {
+    font-size: 20px;
+    font-family: "Saira Condensed", sans-serif;
+    color: #142336;
+    padding-bottom: 18px;
+    font-weight: 600;
+    transition: all 0.3s;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+/* Product image styling */
+#Shop-page .container .row-2 .item-pic img {
+    width: 100%;
+    border: 1px solid #e1e1e1;
+}
+
+/* Sidebar product item text styling */
+#Shop-page .col-2 .product-sidebar-item .product-sidebar-text {
+    margin: 0;
+    color: #111111;
+    font-weight: 600;
+    margin-top: 27px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+/* Sidebar product item text color */
+#Shop-page .col-2 .product-sidebar-item .product-sidebar-text span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #4586D5;
+}
+
+/* Sidebar product image border styling */
+#Shop-page .col-2 .product-sidebar-item .product-sidebar-img {
+    border: 1px solid #e1e1e1;
+    margin: 5px 5px 5px;
+}

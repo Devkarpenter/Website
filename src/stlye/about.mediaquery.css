@@ -1,0 +1,33 @@
+/* media query for 1200 pixal */
+
+@media screen and (width>1200px) {
+    #About-page .counter-spad {
+        padding-bottom: 250px;
+    }
+}
+
+@media only screen and (width<1200px) {
+
+}
+
+/* //media query for 768 pixal */
+
+@media only screen and (width < 768px) {
+    #About-page .counter-spad{
+        padding-bottom:245px ;
+    }
+}
+
+@media only screen and (width > 768px) {
+
+}
+
+/* //media query for 576 pixal */
+
+@media only screen and (max-width < 576px) {
+
+}
+
+@media screen and (width < 500px) {
+
+}

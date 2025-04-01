@@ -1,0 +1,53 @@
+
+
+/* Breadcrumb Section - Background image and styling for Contact Page */
+#Contact-page .bread-crump-options {
+    background-image: url("../../../assets/breadcrumb-4.jpg.webp");
+    background-size: cover;
+    width: 100%;
+} 
+
+/* Contact form styling */
+#Contact-page .row .col-1 form {
+    width: 400px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Input field styling inside the form */
+#Contact-page .row .col-1 form input {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    font-size: 15px;
+    color: #888888;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Contact form submit button styling */
+#Contact-page .row .col-1 form button {
+    color: white;
+    margin-top: 30px;
+    background: #142336;
+    padding: 12px 30px 10px;
+}
+
+/* Textarea styling in the contact form */
+#Contact-page .row .col-1 form textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    font-size: 15px;
+    color: #888888;
+    padding-left: 20px;
+    padding-top: 12px;
+    resize: none;
+    margin-bottom: 14px;
+}
+
+/* Contact page right column styling */
+

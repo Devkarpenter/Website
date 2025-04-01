@@ -1,0 +1,62 @@
+/* Breadcrumb Section - Background image and styling */
+.bread-crump-options {
+    background-image: url("../../../assets/breadcrumb-1.jpg.webp");
+    width: 100%;
+    background-repeat: no-repeat;
+   background-position: center center;
+}
+
+/* Centering content inside breadcrumb section */
+.bread-crump-options .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 95px;
+    text-align: center;
+}
+
+
+/* Styling breadcrumb title */
+.bread-crump-options h2 {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 90px;
+    text-transform: uppercase;
+    margin-bottom: 5px; 
+}
+
+/* Styling breadcrumb links */
+.bread-crump-options .container .links a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Styling breadcrumb span elements */
+.bread-crump-options .container .links span {
+    text-decoration: none;
+    color: white;
+}
+
+/* About Page Counter Section */
+/* #About-page .counter-spad {
+    padding-bottom: 550px;
+} */
+
+/* About Page Video Section */
+#About-page .about-video .about-img {
+    background-image: url("../../../assets/about-video.jpg.webp");
+    height: 500px;
+    width: 93vw;
+    margin-top: -250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+/* Play button inside About Page video section */
+#About-page .about-video .about-img i {
+    font-size: 400%;
+}

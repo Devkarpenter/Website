@@ -1,0 +1,201 @@
+/* Breadcrumb Section - Background image and styling */
+#News-page .bread-crump-options {
+    background-image: url("../../../assets/breadcrumb-4.jpg.webp");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Main Content Layout */
+#News-page .container .row .col-1 {
+    display: flex;
+    /* width: 70%; */
+    flex-wrap: wrap;
+}
+
+/* Row layout for aligning columns properly */
+#News-page .row {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+/* Individual News Items Styling */
+#News-page .container .items {
+    /* width: 50%; Ensures two items per row */
+    padding: 10px;
+}
+
+/* Ensuring images take full width of container */
+#News-page .container .items img {
+    width: 100%;
+}
+
+/* Styling for metadata list under news items */
+#News-page .container .items ul {
+    display: flex;
+    gap: 14px;
+}
+
+/* Styling links inside news items */
+#News-page .col-1 .items a {
+    color: #142336;
+    text-decoration: none;
+    line-height: 26px;
+    width: 50px;
+}
+
+/* Label for news items (like categories or tags) */
+#News-page .lable {
+    width: 100%;
+    text-align: center;
+    margin-top: -13px;
+    margin-bottom: 20px;
+}
+
+/* Label background color and text styling */
+#News-page .lable span {
+    background-color: #FAD110;
+    padding: 5px 10px;
+    color: rgb(18, 4, 4);
+}
+
+/* Blog item text container */
+#News-page .blog-item-text {
+    max-width: 300px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+/* List styling for metadata under blog items */
+#News-page .blog-item-text ul {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    font-size: 14px;
+    color: #888888;
+    list-style: none;
+    position: relative;
+}
+
+/* Sidebar Search Box Styling */
+#News-page .blog-sidebar-search form input {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    font-size: 15px;
+    color: #888888;
+    padding-left: 20px;
+    margin-bottom: 66px;
+}
+
+/* Remove outline on focus for input fields */
+#News-page .blog-sidebar-search form input:focus {
+    outline: none;
+}
+
+/* Sidebar Title Styling */
+#News-page .bside-title h4 {
+    color: #142336;
+    font-weight: 600;
+    display: inline-block;
+    padding-right: 12px;
+    background: #ffffff;
+}
+
+/* Sidebar Column Layout */
+#News-page .container .row .col-2 {
+    /* width: 30%; */
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+/* Sidebar Buttons Styling */
+#News-page .container .row .col-2 button {
+    font-size: 25px;
+    border: 1px solid #e1e1e1;
+    border-left: none;
+    background: #ffffff;
+    position: absolute;
+    height: 50px;
+    margin-left: -3px;
+    padding: 0 20px;
+}
+
+/* Popular Blog Sidebar Items Layout */
+#News-page .blog-sidebar-popular .blog-sidebar-post-item {
+    display: flex;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+/* Popular Blog Post Text Styling */
+#News-page .blog-sidebar-popular .blog-sidebar-post-item-text {
+    color: #142336;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+/* Date and Meta info styling for popular blog posts */
+#News-page .blog-sidebar-popular .blog-sidebar-post-item-text span {
+    display: block;
+    color: #888888;
+    font-size: 14px;
+}
+
+/* Social Media Sidebar Section */
+#News-page .blog-sidebar-social {
+    margin-top: 50px;
+}
+
+/* Social Media Links Styling */
+#News-page .blog-sidebar-social a {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #ffffff;
+    background: #4586D5;
+    display: inline-block;
+    padding: 12px 20px;
+    width: calc(50% - 16px);
+    margin-right: 16px;
+    margin-bottom: 16px;
+    float: left;
+    text-decoration: none;
+}
+
+/* Facebook Social Media Button */
+#News-page .blog-sidebar-social a.facebook {
+    display: flex;
+    justify-content: space-between;
+    background: #4586D5;
+}
+
+/* Instagram Social Media Button with Gradient Background */
+#News-page .blog-sidebar-social a.instagram {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #5645D5, #D545D5, #FFD13C);
+}
+
+/* Twitter Social Media Button */
+#News-page .blog-sidebar-social a.Twitter {
+    display: flex;
+    justify-content: space-between;
+    background: #45BFD5;
+}
+
+/* YouTube Social Media Button */
+#News-page .blog-sidebar-social a.Youtube {
+    display: flex;
+    justify-content: space-between;
+    background: #D54545;
+}
+
+/* Spacing for Sidebar Title */
+#News-page .blog-sidebar-social .bside-title {
+    margin-bottom: 30px;
+}

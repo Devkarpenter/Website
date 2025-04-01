@@ -1,0 +1,70 @@
+/* //media query for 1200 pixal */
+
+@media screen and (width>1200px){
+    #Shop-page .container .row .col-1{
+        width: 75%;
+    }
+    #Shop-page .container .row .col-2{
+        width: 25%;
+    }
+    #Shop-page .container .col-1 .row-2 .items{
+        width: 33%;
+    }
+
+    #Shop-page .container .col-2 .product-sidebar-search input {
+        width: 100%;
+    }
+}
+
+@media screen and (width<1200px){
+    #Shop-page .container .row .col-1{
+        width: 100%;
+    }
+    #Shop-page .container .row .col-2{
+        width: 100%;
+    }
+
+    #Shop-page .container .col-1 .row-2 .items{
+        width: 45%;
+        margin-left: 25px;
+    }
+
+    #Shop-page .container .row .col-2 {
+        padding-top: 40px;
+        padding-left: 30px;
+        /* width: 25%; */ 
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* //media query for 768 pixal */
+
+
+@media only screen and (width < 768px) {
+
+    #Shop-page .container .col-1 .row-2 .items {
+        width: 100%;
+    }
+
+    #Shop-page .container .col-2 .product-sidebar-search input{
+        width: 80%;
+    }
+
+
+}
+
+@media only screen and (width > 768px) {
+
+}
+
+/* //media query for 768 pixal */
+
+@media only screen and (max-width < 576px) {
+
+}
+
+@media screen and (width < 500px) {
+
+}
