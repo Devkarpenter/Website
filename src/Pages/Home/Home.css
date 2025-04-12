@@ -91,8 +91,10 @@
     margin-top: 26px;
 }
 
+
+
 .container {
-    width: 100%;
+    
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -101,7 +103,8 @@
 
 .row{
     display: flex;
-    -ms-flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
@@ -161,6 +164,7 @@
 
 .service-home .container .row-2{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 40px;
 }
@@ -178,6 +182,7 @@
 .service-home  .row-2 .box-content{
     text-align: center;
     justify-content: center;
+    padding: 70px 40px 35px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -192,7 +197,7 @@
 
 .service-home .row-2 .box-content p{
     color: #777777;
-    width: 360px;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -243,12 +248,22 @@
     margin: auto auto;
 }
 
-.counter-spad .counter-spad .counter .row{
+.counter-spad  .counter .row{
     margin: auto;
 }
 
-.counter-spad .row .counter-item{
+.counter-spad  .row{
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: space-around;
+}
+
+.counter-spad .row .counter-item{
+    width: 100%;
+    display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -261,6 +276,7 @@
 
 .about-spad .container .row{
     display: flex ;
+    align-items: center;
    
 }
 .about-spad .container .row .about-pic img{
@@ -307,8 +323,13 @@
 
 /* tesimonial-spad section */
 
+.tesimonial-spad {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
 .tesimonial-spad .container{
-    margin-top: 90px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -472,6 +493,7 @@
 .products-home .container .row-2 .product-item .item-text{
     text-align: center;
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .products-home .container .row-2 .product-item .item-text a{

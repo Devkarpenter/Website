@@ -1,9 +1,130 @@
 import React from "react";
 import "./Home.css";
-
+import Box from "../../Components/box/box";
+import Item from "../../Components/box/Item/Item";
+import Counter from "../../Components/box/counter/counter";
+import Tesimonial from "../../Components/box/Tesimonial/Tesimonial";
+import Product from "../../Components/product/Product";
+import Blog from "../../Components/blog/blog";
 
 
 const Home = () => {
+
+
+  let titles = [{
+    title: 'A/C Repair',
+    discription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
+  },
+  {
+    title: 'A/C Maintenance',
+    discription: 'Lorem ipsum dolor sit amet',
+  },
+  {
+    title: 'Ductless Mini-Split',
+    discription: 'consectetur adipiscing elit, sed do eiusmod.',
+  },
+  ];
+
+  let items = [{
+    title: 'No upfront payments',
+  },
+  {
+    title: 'Satisfaction Guarantee',
+  },
+  {
+    title: 'Emergency Service',
+  },
+  {
+    title: '8 Years Experience',
+  }
+]
+
+  let counters = [{
+    title: '3589',
+    discription: 'Setified Customers',
+    img: 'src/assets/ci-1.png.webp'
+  },
+  {
+    title: '868',
+    discription: 'Professional',
+    img: 'src/assets/ci-2.png.webp'
+  },
+  {
+    title: '5148',
+    discription: 'Equipment Sold',
+    img: 'src/assets/ci-3.png.webp'
+  },
+  {
+    title: '51',
+    discription: 'Branches Operating',
+    img: 'src/assets/ci-4.png.webp'
+  }]
+
+  let tesimonial =[{
+    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+    name: 'Sophie Jefferson',
+    location: 'Swindon, England',
+    img: 'src/assets/ta-1.png.webp'
+  },
+  {
+    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+    name: 'Cynthia Moore', 
+    location: 'Kansas, USA',
+    img: 'src/assets/ta-2.png.webp'
+  },
+  {
+    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+    name: 'Andre Curtis',
+    location: 'Dresden, Germany',
+    img: 'src/assets/ta-3.png.webp'
+  },
+]
+
+
+  let products = [{
+    discription: 'Heat Storm Wall Gray HS-1000-WX Deluxe Space Saving-1000 W',
+    price: '$97.0',
+    img: 'src/assets/product-1.jpg.webp'
+  },
+  {
+    discription: 'Stiebel Eltron 074058 120-Volt 1500 Watts Wall Mounted Electric',
+    price: '$25.0',
+    img: 'src/assets/product-2.jpg.webp'
+  },
+  {
+    discription: ' Vornadobaby Purio Nursery Air Purifier with True HEPA Filter',
+    price: '$52.0',
+    img: 'src/assets/product-3.jpg.webp'
+  },
+  {
+    discription: 'Heat Storm Wall Gray HS-1000-WX Deluxe Space Saving-1000 W',
+    price: '$68.0',
+    img: 'src/assets/product-4.jpg.webp'
+  }
+
+]
+
+  let blogs = [{
+    lebal: 'TIPS & TRICS',
+    title: '21 Air Conditioner Maintenance and Home Cooling Tips',
+    date: 'Jun 24, 2020',
+    name: 'Eleanor Hampton',
+  },
+  {
+    lebal: 'TIPS & TRICS',
+    title: '21 Air Conditioner Maintenance and Home Cooling Tips',
+    date: 'Jun 24, 2020',
+    name: 'Eleanor Hampton',
+  },
+  {
+    lebal: 'TIPS & TRICS',
+    title: '21 Air Conditioner Maintenance and Home Cooling Tips',
+    date: 'Jun 24, 2020',
+    name: 'Eleanor Hampton',
+  },
+]
+
+
   return (
     <>
     <div id="home-page">
@@ -23,30 +144,16 @@ const Home = () => {
       <section className="benifit">
         <div className="container">
           <div className="row">
-            <div className="item item-1">
-              <div className="benifit-items">
-                <img src="src/assets/benifit-1.png.webp" alt="" />
-                <h4>No upfront payments</h4>
-              </div>
-            </div>
-            <div className="item item-2">
-              <div className="benifit-items">
-                <img src="src/assets/benifit-2.png.webp" alt="" />
-                <h4>Satisfaction Guarantee</h4>
-              </div>
-            </div>
-            <div className="item item-3">
-              <div className="benifit-items">
-                <img src="src/assets/benifit-3.png.webp" alt="" />
-                <h4>Emergency Service</h4>
-              </div>
-            </div>
-            <div className="item item-4">
-              <div className="benifit-items">
-                <img src="src/assets/benifit-4.png.webp" alt="" />
-                <h4>8 Years Experience</h4>
-              </div>
-            </div>
+
+            {
+              items.map((item, index) => {
+                return (
+                  <div className="col-3" key={index}>
+                    <Item title={item.title}  />
+                  </div>
+                )
+              })
+            }
             
           </div>
         </div>
@@ -63,53 +170,21 @@ const Home = () => {
             </div>
             <div className="content-2">
               <div className="border-btn">
-                <a href="">Get a quote</a>
+                <a>Get a quote</a>
               </div>
             </div>
           </div>
           <div className="row-2">
-            <div className="box">
-              <div className="box-img">
-                <div className="box-icon"></div>
-                <img src="src/assets/services-4.jpg.webp" alt="" />
-              </div>
-              <div className="box-content">
-                <h4>Duct Services</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod.
-                </p>
-                <a href="">More Info</a>
-              </div>
-            </div>
-            <div className="box">
-              <div className="box-img">
-                <div className="box-icon"></div>
-                <img src="src/assets/services-5.jpg.webp" alt="" />
-              </div>
-              <div className="box-content">
-                <h4>A/C Installation</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod.
-                </p>
-                <a href="">More Info</a>
-              </div>
-            </div>
-            <div className="box">
-              <div className="box-img">
-                <div className="box-icon"></div>
-                <img src="src/assets/services-6.jpg.webp" alt="" />
-              </div>
-              <div className="box-content">
-                <h4>Cleaning & Optimization</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod.
-                </p>
-                <a href="">More Info</a>
-              </div>
-            </div>
+
+            {titles.map((item, index) =>  {
+              return (
+                <div className="col-4" key={index}>
+                  <Box title={item.title} discription={item.discription} />
+                </div>
+              );
+            })}
+
+
           </div>
         </div>
       </section>
@@ -117,26 +192,20 @@ const Home = () => {
       <div className="counter-spad">
         <div className="container">
           <div className="row">
-            <div className="counter-item">
-              <img src="src/assets/ci-1.png.webp" alt="" />
-              <span className="num-count">3589</span>
-              <h4>Setified Customers</h4>
-            </div>
-            <div className="counter-item">
-              <img src="src/assets/ci-2.png.webp" alt="" />
-              <span className="num-count">868</span>
-              <h4>Professional</h4>
-            </div>
-            <div className="counter-item">
-              <img src="src/assets/ci-3.png.webp" alt="" />
-              <span className="num-count">5148</span>
-              <h4>Equipment Sold</h4>
-            </div>
-            <div className="counter-item">
-              <img src="src/assets/ci-4.png.webp" alt="" />
-              <span className="num-count">51</span>
-              <h4>Branches Operating</h4>
-            </div>
+
+            {counters.map((item, index) => {
+              return (
+                <div className="col-3" key={index}>
+                  <Counter title={item.title} discription={item.discription} img={item.img}/>
+                </div>
+              );
+            }
+
+            )}
+
+            {/* <Counter/> */}
+
+
           </div>
         </div>
       </div>
@@ -194,62 +263,17 @@ const Home = () => {
           </div>
           <div className="row-1">
             <div className="col">
-              <div className="col-content">
-                <div className="tesimonial-content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida.
-                  </p>
-                </div>
-                <div className="tesimonial-image">
-                  <div className="author-image">
-                    <img src="src/assets/ta-1.png.webp" alt="" />
-                  </div>
-                  <div className="author-text">
-                    <h4>Sophie Jefferson</h4>
-                    <span>Swindon, England</span>
-                  </div>
-                </div>
-              </div>
 
-              <div className="col-content">
-                <div className="tesimonial-content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida.
-                  </p>
-                </div>
-                <div className="tesimonial-image">
-                  <div className="author-image">
-                    <img src="src/assets/ta-2.png.webp" alt="" />
-                  </div>
-                  <div className="author-text">
-                    <h4>Sophie Jefferson</h4>
-                    <span>Swindon, England</span>
-                  </div>
-                </div>
-              </div>
 
-              <div className="col-content">
-                <div className="tesimonial-content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida.
-                  </p>
-                </div>
-                <div className="tesimonial-image">
-                  <div className="author-image">
-                    <img src="src/assets/ta-3.png.webp" alt="" />
-                  </div>
-                  <div className="author-text">
-                    <h4>Sophie Jefferson</h4>
-                    <span>Swindon, England</span>
-                  </div>
-                </div>
-              </div>
+            {tesimonial.map((item, index) => {
+              return (
+                
+                <Tesimonial key={index} title={item.title} name={item.name} location={item.location} img={item.img} />
+              );
+            })}
+
+              
+
             </div>
           </div>
         </div>
@@ -285,73 +309,22 @@ const Home = () => {
           </div>
 
           <div className="row-2">
-            <div className="items">
-              <div className="product-item">
-                <div className="item-pic">
-                  <img src="src/assets/product-1.jpg.webp" alt="" />
-                </div>
-                <div className="item-text">
-                  <h5>
-                    <a href="">
-                      Heat Storm Wall Gray HS-1000-WX Deluxe Space Saving-1000 W
-                    </a>
-                  </h5>
-                  <div className="price">$97.0</div>
-                </div>
-              </div>
+
+            {products.map((item, index) => {
+              return(
+                
+                  <Product key={index} discription={item.discription} price={item.price} img={item.img}/>
+                
+              )
+            }
+            )}
+
+            {/* <Product/> */}
+            
+
+
             </div>
 
-            <div className="items">
-              <div className="product-item">
-                <div className="item-pic">
-                  <img src="src/assets/product-2.jpg.webp" alt="" />
-                </div>
-                <div className="item-text">
-                  <h5>
-                    <a href="">
-                      Stiebel Eltron 074058 120-Volt 1500 Watts Wall Mounted
-                      Electric
-                    </a>
-                  </h5>
-                  <div className="price">$97.0</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="items">
-              <div className="product-item">
-                <div className="item-pic">
-                  <img src="src/assets/product-3.jpg.webp" alt="" />
-                </div>
-                <div className="item-text">
-                  <h5>
-                    <a href="">
-                      {" "}
-                      Vornadobaby Purio Nursery Air Purifier with True HEPA
-                      Filter
-                    </a>
-                  </h5>
-                  <div className="price">$97.0</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="items">
-              <div className="product-item">
-                <div className="item-pic">
-                  <img src="src/assets/product-4.jpg.webp" alt="" />
-                </div>
-                <div className="item-text">
-                  <h5>
-                    <a href="">
-                      Heat Storm Wall Gray HS-1000-WX Deluxe Space Saving-1000 W
-                    </a>
-                  </h5>
-                  <div className="price">$97.0</div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -367,80 +340,19 @@ const Home = () => {
           </div>
           <div className="row">
             <div className="blog">
-              <div className="blog-item">
-                <div className="blog-item-pic">
-                  <img src="src/assets/blog-1.jpg.webp" alt="" />
-                </div>
 
-                <div className="blog-item-text">
-                  <div className="lable">
-                    <span>TIPS & TRICS </span>
-                  </div>
-                  <h4>
-                    <a href="">
-                      21 Air Conditioner Maintenance and Home Cooling Tips
-                    </a>
-                  </h4>
-                  <div className="ul">
-                  <ul>
-                    <li>
-                      BY <span>Eleanor Hampton</span>
-                    </li>
-                    <li>|  Jun 24, 2020</li>
-                  </ul>
-                  </div>
-                </div>
-              </div>
+            
 
-              <div className="blog-item">
-                <div className="blog-item-pic">
-                  <img src="src/assets/blog-2.jpg.webp" alt="" />
-                </div>
+              {blogs.map((item, index) => {
+                return (
+                  <Blog key={index} leble={item.lebal} title={item.title} date={item.date} name={item.name}/>
+                );
+              })}
 
-                <div className="blog-item-text">
-                  <div className="lable">
-                    <span>TIPS & TRICS </span>
-                  </div>
-                  <h4>
-                    <a href="">
-                      21 Air Conditioner Maintenance and Home Cooling Tips
-                    </a>
-                  </h4>
-                  <div className="ul">
-                  <ul>
-                    <li>
-                      BY <span>Eleanor Hampton</span>
-                    </li>
-                    <li>|  Jun 24, 2020</li>
-                  </ul>
-                  </div>
-                </div>
-              </div>
 
-              <div className="blog-item">
-                <div className="blog-item-pic">
-                  <img src="src/assets/blog-6.jpg.webp" alt="" />
-                </div>
 
-                <div className="blog-item-text">
-                  <div className="lable">
-                    <span>TIPS & TRICS </span>
-                  </div>
-                  <h4>
-                    <a href="">
-                      21 Air Conditioner Maintenance and Home Cooling Tips
-                    </a>
-                  </h4>
-                  <div className="ul">
-                  <ul>
-                    <li>
-                      BY <span>Eleanor Hampton</span>
-                    </li>
-                    <li> |  Jun 24, 2020</li>
-                  </ul>
-                  </div>
-                </div>
-              </div>
+              
+
             </div>
           </div>
         </div>

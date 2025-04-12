@@ -190,7 +190,7 @@
   }
   /* home testtimonial */
   .tesimonial-spad .container .col .col-content {
-    width: 40%;
+    /* width: 40%; */
   }
 
   .tesimonial-spad .container .col .col-content:nth-child(2) {
@@ -317,9 +317,9 @@
 
   .hero-text h2 {
     color: #142336;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: 600;
-    line-height: 42px;
+    line-height: 65px;
     text-transform: uppercase;
     margin-bottom: 10px;
     position: relative;
